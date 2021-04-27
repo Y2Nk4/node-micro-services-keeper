@@ -1,0 +1,46 @@
+{
+  "name": "micro-services-keeper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "gen:service-keeper-thrift": "node .\\scripts\\gen-thrift.js -p .\\thrifts\\thriftFiles\\ -o .\\thrifts\\generated\\",
+    "test": "jest",
+    "gen:test-thrift": "node .\\scripts\\gen-thrift.js -p .\\test\\thriftFiles -o .\\test\\thriftFiles\\generated"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Y2Nk4/node-micro-services-keeper.git"
+  },
+  "bin": {
+    "gen": "./scripts/gen-thrift.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Y2Nk4/node-micro-services-keeper/issues"
+  },
+  "homepage": "https://github.com/Y2Nk4/node-micro-services-keeper#readme",
+  "dependencies": {
+    "@y2nk4/node-thrift-pool": "^1.4.3",
+    "commander": "^7.2.0",
+    "etcd3": "^1.1.0",
+    "internal-ip": "^6.2.0",
+    "portfinder": "^1.0.28",
+    "thrift": "^0.14.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.13.5",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@types/jest": "^26.0.22",
+    "babel-jest": "^26.6.3",
+    "core-js": "^2.6.12",
+    "jest": "^26.6.3",
+    "log4js": "^6.3.0",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.3"
+  }
+}

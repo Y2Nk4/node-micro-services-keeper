@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "module": "CommonJS",
+    "target": "ES6",
+    "outDir": "lib",
+    "lib": ["ES2018"],
+    "types": [
+      "node"
+    ],
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": ["src"],
+}
